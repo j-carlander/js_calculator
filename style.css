@@ -1,0 +1,84 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-100: #fff;
+    --color-200: #d1d1d1;
+    --color-300: #dbdbdb;
+
+    --color-600: #636363;
+    --color-700: #4c4c4c;
+    --color-900: #222222;
+
+    --color-accent: #85c7f2;
+}
+
+.calculator {
+    margin: 2rem auto;
+    width: 20rem;
+}
+
+.display-wrapper {
+    width: 100%;
+    min-height: 5rem;
+    background-color: var(--color-700);
+    color: var(--color-200);
+    display: inline-block;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.history {
+    width: 100%;
+    color: var(var(--color-300));
+    flex: 0 0 40;
+    font-size: 1.5rem;
+}
+
+.display {
+    width: 100%;
+    flex: 0 0 60;
+    color: var(--color-100);
+    font-size: 2.5rem;
+}
+
+.btn-container,
+.btn-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.btn {
+    flex: 1 1 25%;
+    font-size: 1.5rem;
+    height: 3em;
+    border: 0.5px solid var(--color-900);
+}
+
+.symbol-btn {
+    background-color: var(--color-300);
+}
+
+.tool-btn {
+    background-color: var(--color-600);
+    color: var(--color-200);
+}
+
+.operation-btn {
+    background-color: var(--color-accent);
+    color: var(--color-100);
+}
+
+.btn:active,
+.btn:hover {
+    opacity: 0.6;
+}
